@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="addSale()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list lines="inset">
+          <ion-item detail="false">
+            <ion-icon name="cash" size="large" class="ion-padding"></ion-icon>
+            <ion-label>
+              <h3>Alliance Peace</h3>
+              <p>Total: RWF 20,000</p>
+            </ion-label>
+            <ion-button slot="end"><ion-icon slot="icon-only" name="eye"></ion-icon></ion-button>
+            <ion-button slot="end" class="ion-no-margin"><ion-icon slot="icon-only" name="build"></ion-icon></ion-button>
+            <ion-button slot="end" color="danger" class="ion-no-margin"><ion-icon slot="icon-only" name="trash"></ion-icon></ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

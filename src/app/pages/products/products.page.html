@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="addProduct()">
+        Product
+      </ion-fab-button>
+      <ion-fab-button (click)="addStock()">
+        Stock
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item lines="inset" detail="false">
+            <ion-thumbnail class="ion-padding">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label class="ion-margin-left">
+              <h3>Skol Malt Big</h3>
+              <p>RWF 1000 <span>Qty. 40</span></p>
+            </ion-label>
+            <ion-button slot="end"><ion-icon slot="icon-only" name="build"></ion-icon></ion-button>
+            <ion-button slot="end" color="danger" class="ion-no-margin"><ion-icon slot="icon-only" name="trash"></ion-icon></ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
